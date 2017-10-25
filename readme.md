@@ -1,11 +1,11 @@
-# Express Preact Starter
+# Preact Starter
 
-Starting point for Express + Preact based projects
+Starting point for Preact based projects
 
 ## Getting Started
 
     npm install
-    npm run start
+    npm run serve
     
     
 ## Useful Resources

@@ -9,15 +9,13 @@ const config = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Express + React App",
+      title: "Preact Starter App",
       favicon: "./favicon.png",
       template: "./template.ejs"
     }),
-    new webpack.HotModuleReplacementPlugin(
-      {
-        // Options...
-      }
-    )
+    new webpack.HotModuleReplacementPlugin({
+      // Options...
+    })
   ],
 
   output: {
@@ -29,13 +27,7 @@ const config = {
 
   devServer: {
     hot: true,
-    port: 9000,
-    proxy: {
-      "/": {
-        target: "http://localhost:3000",
-        pathRewrite: { "^/": "" }
-      }
-    }
+    port: 9000
   },
 
   module: {

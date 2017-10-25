@@ -43,13 +43,7 @@ const config = {
 
   devServer: {
     hot: true,
-    port: 9000,
-    proxy: {
-      "/": {
-        target: "http://localhost:3000",
-        pathRewrite: { "^/": "" }
-      }
-    }
+    port: 9000
   },
 
   module: {
